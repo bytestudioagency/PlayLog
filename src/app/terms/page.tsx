@@ -4,6 +4,7 @@ import { PageShell } from "@/components/PageShell";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "The short, readable rules for using PlayLog.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

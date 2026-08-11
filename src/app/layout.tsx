@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     "track playtime",
     "game rating",
   ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "PlayLog | Track every game you play",
     description:

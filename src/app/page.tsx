@@ -207,10 +207,9 @@ export default async function LandingPage() {
                 Show off your shelf
               </h3>
               <p className="mt-4 max-w-[46ch] leading-[1.65] text-mut">
-                Turn on a public backlog page or an S–E tier list of
-                everything you&apos;ve completed. Both are off by default:
-                flip one on from the dashboard and get a link, no account
-                needed to view it.
+                Every account gets a public backlog page and an S–E tier
+                list of everything you&apos;ve completed. Grab the link from
+                your dashboard and share it, no account needed to view it.
               </p>
             </div>
 

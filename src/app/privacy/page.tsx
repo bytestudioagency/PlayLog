@@ -4,6 +4,7 @@ import { PageShell } from "@/components/PageShell";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "How PlayLog handles your data: what we store, why, and what we never do with it.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

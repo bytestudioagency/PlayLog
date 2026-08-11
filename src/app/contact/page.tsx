@@ -4,6 +4,7 @@ import { PageShell } from "@/components/PageShell";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Get in touch with the PlayLog team: feedback, bugs, or data requests.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {
