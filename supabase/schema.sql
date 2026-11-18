@@ -60,6 +60,12 @@ create trigger games_set_updated_at
 -- so the anon/authenticated keys get no access at all.
 alter table public.games enable row level security;
 
+-- The service role bypasses RLS but still needs table privileges. Newer
+-- Supabase projects no longer grant these automatically on tables created
+-- in public, so grant them explicitly (and only to service_role).
+grant usage on schema public to service_role;
+grant select, insert, update, delete on public.users, public.games to service_role;
+
 -- Storage bucket for game cover images (public read so covers can render).
 insert into storage.buckets (id, name, public)
 values ('game-images', 'game-images', true)
